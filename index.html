@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Key Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="generator-card">
+      <div class="logo-wrap">
+        <img src="assets/logo.webp" alt="Logo" />
+      </div>
+
+      <div class="badge">
+        <span></span>
+        Generator Online
+      </div>
+
+      <h1>ChatGPT API Key Generator</h1>
+      <p class="subtitle">
+        Enter your name and click generate to create a new API access key.
+      </p>
+
+      <div class="input-box">
+        <label for="username">Account name</label>
+        <input id="username" type="text" placeholder="Enter your name" autocomplete="off" />
+      </div>
+
+      <button id="generateBtn" type="button">
+        <span class="button-text">Generate API Key</span>
+        <span class="button-loader"></span>
+      </button>
+
+      <div id="progressWrap" class="progress-wrap">
+        <div class="progress-text">
+          <span id="statusText">Preparing secure generator...</span>
+          <span id="percentText">0%</span>
+        </div>
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div id="resultBox" class="result-box">
+        <div class="result-icon">😂</div>
+        <h2>You got fool!!</h2>
+        <p>This was only a prank screen.</p>
+        <button id="resetBtn" type="button">Try Again</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
